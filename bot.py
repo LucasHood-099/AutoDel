@@ -15,7 +15,9 @@ for usr in environ.get("ADMINS").split():
     ADMINS.append(int(usr))
 
 START_MSG = "<b>Hai {},\nI'm a simple bot to delete group messages after a specific time,Just add me to your group and i will delete messages in agiven time from members of the group</b>"
-
+            reply_markup=InlineKeyboardMarkup( [[
+            InlineKeyboardButton("➕𝖠𝖣𝖣 𝖳𝖮 𝖸𝖮𝖴𝖱 𝖦𝖱𝖮𝖴𝖯➕", url=f"https://t.me/autodelv2bot?startgroup=true")
+            ],[
 
 User = Client(session_name=SESSION,
               api_id=API_ID,
