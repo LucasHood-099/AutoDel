@@ -24,7 +24,7 @@ ALL_PIC = [
 ]
 
 
-Bot.on_message(filters.command("start")) 
+@Bot.on_message(filters.command("start")) 
 async def start_message(bot, message):
     await message.reply_photo(
         photo=random.choice(ALL_PIC),
