@@ -1,5 +1,6 @@
 import asyncio
 from os import environ
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import Client, filters, idle
 
 API_ID = int(environ.get("API_ID"))
